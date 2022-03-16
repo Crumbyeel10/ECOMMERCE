@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-nav:rgb(9, 2, 26); 
+    --color-body:#0b091f;
+    --color-txt: rgb(228, 228, 228);
+    --color-card: rgb(4, 3, 14);
+}
+
+
+body{
+    background-color: var(--color-body) ;
+    color: var(--color-txt);
+}
+.nav-bar{
+    background-color: var(--color-nav);
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+
+}
+.logo-nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.logo-store{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    
+}
+.logo-icon{
+    font-size: 35px;
+    color: var(--color-txt);
+}
+.nav-car{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 45px;
+}
+
+.shopping-car {
+    font-size: 20px;
+    color: var(--color-txt);
+    cursor: pointer;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 30PX;
+    font-size: 24px;
+}
+.products a{
+    text-decoration: none;
+    color: var(--color-txt);
+}
+.img-cards{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+  
+}
+.card{
+    height: 350px;
+    width: 280px;
+    background-color: var(--color-txt);
+    padding: 25px;
+    border-radius: 20px;
+    
+}
+.img-card{
+    max-width: 100%;
+    max-height: 100%;
+}
+.stock{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-body);
+    
+}
+
+
+.button-card{
+   
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: -50px;;
+    position: relative;
+    top: -64px;
+    right: -187px;
+    width: 30px;
+    height: 30px;
+    border-radius: 80px;
+    border: none;
+    color: var(--color-txt);
+    background-color: var(--color-body);
+    
+}
+
+.carrito-main{
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    background-color: transparent;
+    /* height: 400px;
+    left: 617px; */
+
+
+    /* top: 100vh; */
+    
+}
+
+.carrito-main input{
+    display: none;
+}
+.nav-toggle:checked ~ .articulos-shop{
+    top: 0;
+}
+
+.articulos-shop{
+    background-color: red;
+    position: relative;
+    z-index: 2;
+    border-radius: 18px;
+    bottom: -60px;
+    right: -6px;
+    width: 400px;
+    height: 420px;
+    top: 100vh;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    height: 300px;
+    background-color: var(--color-card);
+}
